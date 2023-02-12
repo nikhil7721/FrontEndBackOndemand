@@ -1,0 +1,55 @@
+<div class="order">
+    <span id="heading">Order  Now!</span>
+    
+   
+    <!-- Form -->
+    <form #orderForm="ngForm" (ngSubmit)="submit(orderForm)" ngNativeValidate>
+         
+    <!-- id -->
+     <div class="form-group mb-3">
+      <label for="Id" class="form-lable">Id:</label>
+       <input type="Id" class="form-control" id="orderId" name="orderId" ngModel required>
+    </div>
+
+    <!-- car Name -->
+        <div class="form-group mb-3">
+         <label for="text" class="form-lable">CarName:</label>
+       <input type="text" class="form-control" id="carName" name="carName" ngModel required>
+       </div>
+    <!-- CARMODEL -->
+        
+          <div class="form-group mb-3">
+          <label for="carModel" class="form-lable">carModel:</label>
+          <input type="text" class="form-control" id="carModel" name="carModel" ngModel required>
+        </div>
+
+        <!-- WASHPACK NAME --> 
+        <div class="form-group mb-3">
+          <label for="wName" class="form-label">wName:</label>
+          <input type="text" class="form-control" id="wName" name ="wName" ngModel required>
+          </div>
+
+        <!-- WASHPACK-ID --> 
+        <div class="form-group mb-3">
+          <label for="washPackId" class="form-label">washPackId:</label>
+          <input type="text" class="form-control" id="washPackId" name="washPackId" ngModel required>
+        </div>
+
+          <!-- DATE -->
+          <div class="form-group mb-3">
+            <label for="date" class="form-label">date:</label>
+            <input type="date" class="form-control" id="date" name="date" ngModel required>
+            </div>
+            <!-- PHONE -->
+            <div class="form-group mb-3">
+                <label for="phoneNo" class="form-label">Phone:</label>
+                <input type="text" class="form-control" id="phoneNo" name="phoneNo" ngModel required>
+          <!-- <div class="input-group-append">
+            <span class="input-group-text"><a #textpass (click)="showpass(pass,textpass)">Show</a></span>
+          </div>   -->
+            </div>
+
+       
+       
+        <button type="submit" class="btn btn-primary">Add Order</button> &nbsp;
+        

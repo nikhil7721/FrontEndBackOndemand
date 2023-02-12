@@ -1,0 +1,24 @@
+<h1 class="heading">customer Details</h1>
+<div class="table-responsive mx-auto">
+    <table class="table table-striped table-hover mx-auto w-auto">
+        <thead>
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Name</th>
+              <th scope="col">Phone</th>
+              <th scope="col">Address</th>
+              <th scope="col">Email</th>
+              
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of details; let i=index;">
+              <th scope="row">{{user.cId}}</th>
+              <td > {{user.cName | uppercase }} </td>
+              <td>  {{user.cPhone}} </td>
+              <td> {{user.cAddress | uppercase}} </td>
+              <td> {{user.cEmail}} </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
